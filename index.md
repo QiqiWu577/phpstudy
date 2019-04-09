@@ -30,7 +30,7 @@ echo "My boat is " . $coLOR . "<br>";
 
 ### Array
 
-The second thing I really like in PHP is the object `Array`. The Array in PHP acts not only like the ArrayList in Java. More than that, we can treat `Array` as an array, list (vector), hash table (an implementation of a map), dictionary, collection, stack, queue, and so on. what amazing thing is that an array values can be other arrays, trees and multidimensional arrays are also possible.
+The second thing I really like in PHP is the object [Array](https://www.php.net/manual/en/language.types.array.php). The Array in PHP acts not only like the ArrayList in Java. More than that, we can treat `Array` as an array, list (vector), hash table (an implementation of a map), dictionary, collection, stack, queue, and so on. what amazing thing is that an array values can be other arrays, trees and multidimensional arrays are also possible.
 
 One interesting thing I really love is that you can set any numbers of comma-separated key => value pairs as arguments, which is very useful to store some key values as a pair and not only using index position.
 
@@ -56,9 +56,37 @@ Using `&` before the variable is going to reference the original location of tha
 Last important feature of array I want to talk about is the multidimensional arrays, which provides more effective way to access the array then using Java. Specifically, you can set arrays inside of the array, which acts more like a tree.
 
 ```markdown
+<?php
+$array = array(
+    "foo" => "bar",
+    42    => 24,
+    "multi" => array(
+         "dimensional" => array(
+             "array" => "foo"
+         )
+    )
+);
 
+var_dump($array["foo"]);
+var_dump($array[42]);
+var_dump($array["multi"]["dimensional"]["array"]);
+?>
 ```
 
 ### String functions
 
+Last but not least, [string functions](https://www.php.net/ref.strings) is the third thing that helps me a lot when I was tring to solve the PHP problem. The problem is about how to mask sensitive data with different data format, including array, string, JSON and xml formats. How to deal with these data format is easy because PHP already has handy functions to convert them to each other. The tricky point is that after replace all the sensitive data for some specific fields the ouput they require must be the exacly same as the original one, which means it would be a little bit complicated to achieve that if I want to use those usefule function existing in the PHP library and almost every thing I have to hardcode it. 
+
+After a few hours struggling, I realized that it would be easier to treat those format as string and combine different parts after spliting a string and masking the sensitive data. In this way, I do not worry too much about the data format and also can store the data in the original format. Right now I will introduce 3 most useful string functions I found.
+
+## preg_split
+
+
+## stripos
+
+
+## implode
+
+
+### Summary
 
