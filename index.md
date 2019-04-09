@@ -94,9 +94,29 @@ print_r($keywords);
 
 ### stripos
 
+This is the function used to search for the specific 
+
+```markdown
+<?php
+$findme    = 'a';
+$mystring = 'ABC';
+
+$pos1 = stripos($mystring, $findme);
+```
 
 ### implode
 
+This is the function I used to combine all the array's elements into a string, which is the solution that how to keep the same data format as the original one.
+
+```markdown
+<?php
+
+$array = array('lastname', 'email', 'phone');
+$comma_separated = implode(",", $array);
+
+echo $comma_separated; // lastname,email,phone
+```
 
 ## Summary
 
+To be honest, I really enjoy the learning process of PHP. Maybe it is because that it does not make me feel so frustrated when coding using it. From my experience, It is totally worthy to spend time on it.
