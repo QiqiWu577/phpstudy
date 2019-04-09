@@ -1,10 +1,10 @@
-[PHP](https://en.wikipedia.org/wiki/PHP), **Hypertext Preprocessor**, is the popular server scripting language designed for web development. The main reason why I want to talk about PHP in this blog is that It has been a long time that learning PHP exists in my to-do list but just do not have sufficient time to do some research about it. Recently, I got a interview chance last week and the potential company asked me to solve the PHP problem. After I completed the task, I am so impressed about the efficiency of this programming language because the simple syntax and the a variaty of useful functions of its liabray. From my opinoin, It is really worthy here to share what handy knowledge of PHP I have learned.
+[PHP](https://en.wikipedia.org/wiki/PHP), **Hypertext Preprocessor**, is the popular server scripting language designed for web development. The main reason why I want to talk about PHP in this blog is that It has been a long time that learning PHP exists in my to-do list but just do not have sufficient time to do some research about it. Recently, I got an interview chance last week and the potential company asked me to solve the PHP problem. After I completed the task, I am so impressed about the efficiency of this programming language because the simple syntax and a variety of useful functions of its library. From my opinion, it is really worthy here to share what handy knowledge of PHP I have learned.
 
-Another thing I want to mention before we start to explore is that the compiler I use. Since I have to finish the task in the limited time, I did not loading my php file in the specific [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment). What I use is the [online sandbox PHP](http://sandbox.onlinephpfunctions.com/), which I found it is very useful and easy to use to test the output of the codes. In this blog, I would use the output that sanbox PHP compiles.
+Another thing I want to mention before we start to explore is that the compiler I use. Since I have to finish the task in the limited time, I did not load my php file in the specific [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment). What I use is the [online sandbox PHP](http://sandbox.onlinephpfunctions.com/), which I found it is very useful and easy to use to test the output of the codes. In this blog, I would use the output that sanbox PHP compiles.
 
 ## Syntax
 
-To create a php file, writing `<?php` at the beginning of the file with file extension ".php" is enough.The simple basic syntax is using php tag to create a php script. We can use this php tag every where in no matter html file or jsp file, which is very similar the way how we use the script tag. 
+To create a php file, writing `<?php` at the beginning of the file with file extension ".php" is enough. The simple basic syntax is using php tag to create a php script. We can use this php tag everywhere in no matter html file or jsp file, which is very similar the way how we use the script tag. 
 
 ```markdown
 <?php
@@ -75,9 +75,9 @@ var_dump($array["multi"]["dimensional"]["array"]);
 
 ## String functions
 
-Last but not least, [string functions](https://www.php.net/ref.strings) is the third thing that helps me a lot when I was tring to solve the PHP problem. The problem is about how to mask sensitive data with different data format, including array, string, JSON and xml formats. How to deal with these data format is easy because PHP already has handy functions to convert them to each other. The tricky point is that after replace all the sensitive data for some specific fields the ouput they require must be the exacly same as the original one, which means it would be a little bit complicated to achieve that if I want to use those usefule function existing in the PHP library and almost every thing I have to hardcode it. 
+Last but not least, [string functions](https://www.php.net/ref.strings) is the third thing that helps me a lot when I was trying to solve the PHP problem. The problem is about how to mask sensitive data with different data format, including array, string, JSON and xml formats. How to deal with these data format is easy because PHP already has handy functions to convert them to each other. The tricky point is that after replace all the sensitive data for some specific fields the output they require must be the exactly same as the original one, which means it would be a little bit complicated to achieve that if I want to use those useful function existing in the PHP library and almost everything I have to hardcode it. 
 
-After a few hours struggling, I realized that it would be easier to treat those format as string and combine different parts after spliting a string and masking the sensitive data. In this way, I do not worry too much about the data format and also can store the data in the original format. Right now I will introduce 3 most useful string functions I found.
+After a few hours struggling, I realized that it would be easier to treat those format as string and combine different parts after splitting a string and masking the sensitive data. In this way, I do not worry too much about the data format and also can store the data in the original format. Right now I will introduce 3 most useful string functions I found.
 
 ### preg_split
 
@@ -119,4 +119,4 @@ echo $comma_separated; // lastname,email,phone
 
 ## Summary
 
-To be honest, I really enjoy the learning process of PHP. Maybe it is because that it does not make me feel so frustrated when coding using it. From my experience, It is totally worthy to spend time on it.
+To be honest, I really enjoy the learning process of PHP. Maybe it is because that it does not make me feel so frustrated when coding using it. From my experience, it is totally worthy to spend time on it.
