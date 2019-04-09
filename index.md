@@ -30,8 +30,29 @@ echo "My boat is " . $coLOR . "<br>";
 
 ### Array
 
-The second thing I really like in PHP is the object `Array`
+The second thing I really like in PHP is the object `Array`. The Array in PHP acts not only like the ArrayList in Java. More than that, we can treat `Array` as an array, list (vector), hash table (an implementation of a map), dictionary, collection, stack, queue, and so on. what amazing thing is that an array values can be other arrays, trees and multidimensional arrays are also possible.
 
-### Support or Contact
+One interesting thing I really love is that you can set any numbers of comma-separated key => value pairs as arguments, which is very useful to store some key values as a pair and not only using index position.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```markdown
+<?php
+$array = array(
+    "foo" => "bar",
+    "bar" => "foo",
+);
+```
+
+The symbol `=>` is used as an access mechanism for arrays. This means that the key on the left side will match the value on the right side. Another symbol `$` is used for declaring every variable in PHP.
+
+```markdown
+foreach($array as &$detail){
+    echo $detail;
+    $detail = "developer";
+}
+```
+
+Using `&` before the variable is going to reference the original location of that element in the array so that we can reset the value of the array. Otherwise, you cannot change the value. Also, from my research, `foreach` can be only used for loop the elements in the array.
+
+### String functions
+
+
