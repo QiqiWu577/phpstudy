@@ -1,8 +1,4 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/QiqiWu577/phpstudy/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[PHP](https://en.wikipedia.org/wiki/PHP), **Hypertext Preprocessor**, is the popular server scripting language designed for web development. The main reason why I want to talk about PHP in this blog is that It has been a long time that learning PHP exists in my to-do list but just do not have sufficient time to do some research about it. Recentely, I got a interview chance last week and the potential company asked me to solve the PHP problem. After I completed the task, I am so impressed about the efficiency of this programming language because the simple syntax and the a variaty of useful functions of its liabray.
 
 ### Markdown
 
