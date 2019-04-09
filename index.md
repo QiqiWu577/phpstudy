@@ -2,7 +2,7 @@
 
 Another thing I want to mention before we start to explore is that the compiler I use. Since I have to finish the task in the limited time, I did not loading my php file in the specific [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment). What I use is the [online sandbox PHP](http://sandbox.onlinephpfunctions.com/), which I found it is very useful and easy to use to test the output of the codes. In this blog, I would use the output that sanbox PHP compiles.
 
-### Syntax
+## Syntax
 
 To create a php file, writing `<?php` at the beginning of the file with file extension ".php" is enough.The simple basic syntax is using php tag to create a php script. We can use this php tag every where in no matter html file or jsp file, which is very similar the way how we use the script tag. 
 
@@ -28,7 +28,7 @@ echo "My boat is " . $coLOR . "<br>";
 </html>
 ```
 
-### Array
+## Array
 
 The second thing I really like in PHP is the object [Array](https://www.php.net/manual/en/language.types.array.php). The Array in PHP acts not only like the ArrayList in Java. More than that, we can treat `Array` as an array, list (vector), hash table (an implementation of a map), dictionary, collection, stack, queue, and so on. what amazing thing is that an array values can be other arrays, trees and multidimensional arrays are also possible.
 
@@ -73,20 +73,30 @@ var_dump($array["multi"]["dimensional"]["array"]);
 ?>
 ```
 
-### String functions
+## String functions
 
 Last but not least, [string functions](https://www.php.net/ref.strings) is the third thing that helps me a lot when I was tring to solve the PHP problem. The problem is about how to mask sensitive data with different data format, including array, string, JSON and xml formats. How to deal with these data format is easy because PHP already has handy functions to convert them to each other. The tricky point is that after replace all the sensitive data for some specific fields the ouput they require must be the exacly same as the original one, which means it would be a little bit complicated to achieve that if I want to use those usefule function existing in the PHP library and almost every thing I have to hardcode it. 
 
 After a few hours struggling, I realized that it would be easier to treat those format as string and combine different parts after spliting a string and masking the sensitive data. In this way, I do not worry too much about the data format and also can store the data in the original format. Right now I will introduce 3 most useful string functions I found.
 
-## preg_split
+### preg_split
+
+The `preg_split` function is used to split the string by a [regular expression](https://en.wikipedia.org/wiki/Regular_expression). It is super useful and easy to use as long as you understand how to specify the regular expression.
+
+```markdown
+<?php
+// split the phrase by any number of commas or space characters,
+// which include " ", \r, \t, \n and \f
+$keywords = preg_split("/[\s,]+/", "hypertext language, programming");
+print_r($keywords);
+?>
+```
+
+### stripos
 
 
-## stripos
+### implode
 
 
-## implode
-
-
-### Summary
+## Summary
 
