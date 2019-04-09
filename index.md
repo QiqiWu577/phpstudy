@@ -53,6 +53,12 @@ foreach($array as &$detail){
 
 Using `&` before the variable is going to reference the original location of that element in the array so that we can reset the value of the array. Otherwise, you cannot change the value. Also, from my research, `foreach` can be only used for loop the elements in the array.
 
+Last important feature of array I want to talk about is the multidimensional arrays, which provides more effective way to access the array then using Java. Specifically, you can set arrays inside of the array, which acts more like a tree.
+
+```markdown
+
+```
+
 ### String functions
 
 
